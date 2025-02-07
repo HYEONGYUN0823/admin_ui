@@ -342,7 +342,13 @@
                                     <table class="table table-responsive-sm">
                                         <thead>
                                             <tr>
-                                                <td><b>코드그룹</b><b class="red"> *</b></td>
+                                                <td><b>코드그룹</b><b class="red"> *</b>
+                                                <br>
+                                                <select id="inputState" class="form-select" style="width: 300px;">
+                                                    <option selected>선택하세요</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </td>
                                                 <td></td>
                                                 <td></td>
                                                 <td></td>
@@ -350,64 +356,64 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>
-                                                    <select id="inputState" class="form-select" style="width: 300px;">
-                                                        <option selected>선택하세요</option>
-                                                        <option>...</option>
-                                                    </select>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><b>코드</b><b class="red"> *</b></td>
-                                                <td><b>코드 (ANOTHER)</b></td>
-                                                <td><b>코드 이름</b><b class="red"> *</b></td>
-                                                <td><b>코드 이름 (영문)</b></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <input class="form-control" type="text" placeholder="자동생성"
-                                                        aria-label="Disabled input example" disabled>
-                                                </td>
-                                                <td>
-                                                    <input class="form-control" id="code01" type="text"
-                                                        placeholder="영문소문자, 숫자">
-                                                </td>
-                                                <td>
-                                                    <input class="form-control" id="code02" type="text"
-                                                        placeholder="한글, 영대소문자, 숫자">
-                                                </td>
-                                                <td>
-                                                    <input class="form-control" id="code03" type="text"
-                                                        placeholder="영대소문자, 숫자">
-                                                </td>
+                                                <td><b>코드</b><b class="red"> *</b>
+                                                <br>
+                                                <input class="form-control" type="text" placeholder="자동생성"
+                                                aria-label="Disabled input example" disabled>
+                                            </td>
+                                                <td><label for="code01"><b>코드 (ANOTHER)</b></label>
+                                                <br>
+                                                <input class="form-control" id="code01" type="text"
+                                                placeholder="영문소문자, 숫자">
+                                            </td>
+                                                <td><label for="code02"><b>코드 이름</b><b class="red"> *</b></label>
+                                                <br>
+                                                <input class="form-control" id="code02" type="text"
+                                                placeholder="한글, 영대소문자, 숫자">
+                                            </td>
+                                                <td><label for="code03"><b>코드 이름 (영문)</b></label>
+                                                <br>
+                                                <input class="form-control" id="code03" type="text"
+                                                placeholder="영대소문자, 숫자">
+                                            </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <b class="rgb">사용여부</b><b class="red"> *</b>
-                                                </td>
-                                                <td>
-                                                    <label for="use"><b class="rgb">순서</b><b class="red"> *</b></label>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
+                                                    <br>
                                                     <select id="inputState" class="form-select">
                                                         <option>사용</option>
                                                         <option>사용안함</option>
                                                     </select>
                                                 </td>
                                                 <td>
+                                                    <label for="use"><b class="rgb">순서</b><b class="red"> *</b></label>
+                                                    <br>
                                                     <input class="form-control" id="use" type="text">
-                                                </td>
-                                            <tr>
-                                                <td>
-                                                    <label for="description"><b class="rgb">설명</b></label>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2">
+                                                    <label for="description"><b class="rgb">설명</b></label>
+                                                    <br>
                                                     <textarea class="form-control" id="description"
-                                                        style="height: 100px"></textarea>
+                                                    style="height: 100px"></textarea>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-dark"
+                                                        style="text-align: right;">
+                                                        <i class="fa-solid fa-list-ul"></i>
+                                                    </button>
+                                                </td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>
+                                                    <span style="float: right;">
+                                                        <button type="button" class="btn btn-primary"><i
+                                                                class="fa-solid fa-database"></i></button>
+                                                    </span>
                                                 </td>
                                             </tr>
                                         </tbody>
